@@ -1,0 +1,30 @@
+{
+  "name": "opencode-luthien",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that routes AI traffic through the Luthien gateway",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1.14.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "1.14.25",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.6.0"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaoloC68/opencode-luthien.git"
+  },
+  "keywords": ["opencode", "luthien", "plugin", "ai-gateway"]
+}
